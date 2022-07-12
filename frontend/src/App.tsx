@@ -1,13 +1,20 @@
-import NotificationButtom from "./components/NotificationButtom"
+import Header from "./components/header"
+import SalesCard from "./components/SalesCard"
 import './styles.css'
 
 function App() {
   return (
     <>
-      <h1>Corinthians</h1>
-      <NotificationButtom />
+      <header />
+        <main />
+         <section id="sales" />
+            <div className="dsmeta-container">
+              <SalesCard/>
+            <div />
+          <section/>
+        <main/>
     </>
-  )
+          )
 }
 
-export default App
+          export default App
