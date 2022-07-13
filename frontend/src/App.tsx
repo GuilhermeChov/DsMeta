@@ -5,16 +5,15 @@ import './styles.css'
 function App() {
   return (
     <>
-      <header />
-        <main />
-         <section id="sales" />
-            <div className="dsmeta-container">
-              <SalesCard/>
-            <div />
-          <section/>
-        <main/>
-    </>
-          )
+      <Header />
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
+            <SalesCard />
+            </div >
+        </section>
+        </main>
+      </>
+      )
 }
-
-          export default App
+      export default App
