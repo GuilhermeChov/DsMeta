@@ -1,6 +1,6 @@
 import Header from "./components/header"
 import SalesCard from "./components/SalesCard"
-import './styles.css'
+import './index.css'
 
 function App() {
   return (
