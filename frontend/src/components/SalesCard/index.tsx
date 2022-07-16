@@ -14,7 +14,6 @@ function SalesCard() {
 
     const [minDate, setMindate] = useState(min)
     const [maxDate, setMaxdate] = useState(max)
-
     const [sales, setSales] = useState<Sale[]>([])
 
     useEffect(() => {
@@ -66,31 +65,28 @@ function SalesCard() {
                     <tbody>
                         {
                             sales.map(sale => {
-                                return(
+                                return (
                                     <tr key={sale.id}>
-                                    <td className="show992">{sale.id}</td>
-                                    <td className="show576">{new Date(sale.date).toLocaleDateString()}</td>
-                                    <td>{sale.sellerName}</td>
-                                    <td className="show992">{sale.visited}</td>
-                                    <td className="show992">{sale.deals}</td>
-                                    <td>R$ {sale.amount.toFixed(2)}</td>
-                                    <td>
-                                        <div className="dsmeta-red-btn-container">
-                                            <div className="dsmeta-red-btn">
-                                                <img src="notification-icon.svg" alt="Notificar" />
+                                        <td className="show992">{sale.id}</td>
+                                        <td className="show576">{new Date(sale.date).toLocaleDateString()}</td>
+                                        <td>{sale.sellerName}</td>
+                                        <td className="show992">{sale.visited}</td>
+                                        <td className="show992">{sale.deals}</td>
+                                        <td>R$ {sale.amount.toFixed(2)}</td>
+                                        <td>
+                                            <div className="dsmeta-red-btn-container">
+                                              <NotificationButtom saleId={sale.id}/>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
                                 )
                             })
                         }
-                        
-                    </tbody>
 
+                    </tbody>
                 </table>
             </div>
-      </>
-            )
+        </>
+    )
 }
 export default SalesCard
