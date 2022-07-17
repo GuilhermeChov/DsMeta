@@ -13,8 +13,12 @@ header {
   }
   
   .dsmeta-logo-container img {
+
     width: 235px;
-  }
+    height: 106.07px;
+    left: 43px;
+    top: 28px;
+}
   
   .dsmeta-logo-container h1 {
     margin-top: 15px;
